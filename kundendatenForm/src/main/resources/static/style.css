@@ -1,0 +1,19 @@
+@charset "utf-8";
+body{
+	background-color: green;
+	color: white;
+}
+
+/* Optionale Anpassung für die Labels */
+form label {
+	display: inline-block;
+	font-weight: bold;
+    width: 100px;
+    
+    
+}
+
+input {
+	width: 200px;
+}
+

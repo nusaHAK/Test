@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Adressformular</title>
+</head>
+<body>
+
+
+<h2>Adressformular</h2>
+
+<form th:action="@{/formular}" th:object="${kunde}" method="post">
+
+    <label>Vorname: <input type="text" th:field="*{vorname}" /></label><br/>
+    <label>Nachname: <input type="text" th:field="*{nachname}" /></label><br/>
+    <label>Straße: <input type="text" th:field="*{strasse}" /></label><br/>
+    <label>Hausnummer: <input type="text" th:field="*{hausnummer}" /></label><br/>
+    <label>Ort: <input type="text" th:field="*{ort}" /></label><br/>
+    <label>PLZ: <input type="text" th:field="*{plz}" /></label><br/>
+    <label>Email: <input type="text" th:field="*{email}" /></label><br/>
+    <p><button type="submit">Absenden</button></p>
+</form>
+
+</body>
+</html>
